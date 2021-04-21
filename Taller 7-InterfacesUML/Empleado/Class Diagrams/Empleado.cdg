@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Empleado">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="" visibility="public" xPosition="423.0" yPosition="260.0">
+      <Fields>
+        <Field name="Cargo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="cacularsueldo" returnType="void" visibility="public"/>
+        <Method name="calcularbonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="804.0" yPosition="260.0">
+      <Fields>
+        <Field name="horas" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="caclcularsueldo" returnType="void" visibility="public"/>
+        <Method name="calcularbonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Trabajador" package="" visibility="public" xPosition="608.0" yPosition="78.0">
+      <Methods>
+        <Method name="calcularsueldo" returnType="void" visibility="public"/>
+        <Method name="calcularbonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Empleado" target="Trabajador"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Profesor" target="Trabajador"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
